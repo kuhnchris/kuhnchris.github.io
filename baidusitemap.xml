@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://kuhnchris.github.io/2020/01/28/vegas-export-alpha/</loc>
+    <lastmod>2021-05-10</lastmod>
+  </url>
+  <url>
+    <loc>https://kuhnchris.github.io/2020/01/29/SEGW-empty/</loc>
+    <lastmod>2021-05-10</lastmod>
+  </url>
+  <url>
     <loc>https://kuhnchris.github.io/2021/05/09/New-Blog-powered-by-Hexo-and-Javascript/</loc>
     <lastmod>2021-05-09</lastmod>
   </url>

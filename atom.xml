@@ -46,4 +46,52 @@
     
   </entry>
   
+  <entry>
+    <title>SEGW Permission for seeing projects</title>
+    <link href="https://kuhnchris.github.io/2020/01/29/SEGW-empty/"/>
+    <id>https://kuhnchris.github.io/2020/01/29/SEGW-empty/</id>
+    <published>2020-01-28T23:00:00.000Z</published>
+    <updated>2021-05-10T13:17:14.353Z</updated>
+    
+    <content type="html"><![CDATA[<p>Quick Info</p><span id="more"></span><h1 id="Issue"><a href="#Issue" class="headerlink" title="Issue"></a>Issue</h1><p>Sometimes, on some customer systems, you do not see any projects in <code>SEGW</code> (neither <code>Z*</code> nor any projects). You can see generated <code>*_MPC_EXT</code> and <code>*_DPC_EXT</code> classes in T-Code <code>SE24</code> (and edit those).</p><h1 id="Check"><a href="#Check" class="headerlink" title="Check"></a>Check</h1><ul><li>Go to <code>SEGW</code>, click on “Open Project”, try the F4 help.</li><li>Check <code>SU53</code></li><li>See following:<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Datum 29.01.2020 Uhrzeit 12:41:39 Transaktion SEGW</span><br><span class="line">  Berechtigungsobjekt /IWBEP/SB  Berechtigung für den SAP Gateway Service Builder</span><br><span class="line">    Berechtigungsfeld dummyfield                                                                           &lt;DUMMY&gt;</span><br></pre></td></tr></table></figure></li></ul><h1 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h1><p>Get yourself the permission object <code>/IWBEP/SB</code>.</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;Quick Info&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="SAP" scheme="https://kuhnchris.github.io/categories/SAP/"/>
+    
+    
+    <category term="SAP" scheme="https://kuhnchris.github.io/tags/SAP/"/>
+    
+    <category term="ABAP" scheme="https://kuhnchris.github.io/tags/ABAP/"/>
+    
+    <category term="SEGW" scheme="https://kuhnchris.github.io/tags/SEGW/"/>
+    
+    <category term="FIORI" scheme="https://kuhnchris.github.io/tags/FIORI/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Export Video with Alpha</title>
+    <link href="https://kuhnchris.github.io/2020/01/28/vegas-export-alpha/"/>
+    <id>https://kuhnchris.github.io/2020/01/28/vegas-export-alpha/</id>
+    <published>2020-01-27T23:00:00.000Z</published>
+    <updated>2021-05-10T13:19:06.290Z</updated>
+    
+    <content type="html"><![CDATA[<p>A short tutorial on exporting alpha-masked videos in Vegas Pro 15</p><span id="more"></span><h1 id="Prepare"><a href="#Prepare" class="headerlink" title="Prepare"></a>Prepare</h1><p>Ensure you have your clip masked properly. Easiest would be to check during Fade-In/Fade-Out by adding a Solid Color Layer and check:</p><p><img src="/2020/01/28/vegas-export-alpha/2020-01-28-vegas-export-alpha-01.png" alt="Solid Color Layer"></p><p><img src="/2020/01/28/vegas-export-alpha/2020-01-28-vegas-export-alpha-02.png" alt="Check Fade-In/Out"></p><h1 id="Export"><a href="#Export" class="headerlink" title="Export"></a>Export</h1><p>Export Settings: </p><ul><li>Make sure you select ‘Video for Windows’</li><li>Select a profile with ‘YUV’</li><li>Select ‘uncompressed’</li><li>Check the export alpha checkbox</li></ul><p><img src="/2020/01/28/vegas-export-alpha/2020-01-28-vegas-export-alpha-03.png" alt="Vegas Export Settings"></p><p>After export you get a big file. Convert that to something proper with ffmpeg.</p><h1 id="Transcode"><a href="#Transcode" class="headerlink" title="Transcode"></a>Transcode</h1><p><code>ffmpeg -i exportFile.avi -c:v libvpx -pix_fmt yuva420p -b:v 5000000 exportFile.webm</code></p><h1 id="Result"><a href="#Result" class="headerlink" title="Result"></a>Result</h1><iframe src="cyogietyt.webm" width="320" height="180" frameborder="0" allowfullscreen></iframe><h1 id="List-of-references"><a href="#List-of-references" class="headerlink" title="List of references"></a>List of references</h1><p><a href="https://www.youtube.com/watch?v=sxVWYNS5-Oc">unlisted udemy original</a></p><p><a href="https://stackoverflow.com/questions/34856236/convert-mov-with-alpha-to-vp9-webm-with-alpha-using-ffmpeg">convert .avi/.mov to .webm</a></p><p><a href="https://stackoverflow.com/questions/45588064/error-transparency-encoding-with-auto-alt-ref-does-not-work-when-converting-a">error: transparency-encoding with auto-alt-ref does not work</a></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;A short tutorial on exporting alpha-masked videos in Vegas Pro 15&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Video Editing" scheme="https://kuhnchris.github.io/categories/Video-Editing/"/>
+    
+    
+    <category term="Vegas" scheme="https://kuhnchris.github.io/tags/Vegas/"/>
+    
+  </entry>
+  
 </feed>
