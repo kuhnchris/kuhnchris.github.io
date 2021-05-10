@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://kuhnchris.github.io/2021/05/09/New-Blog-powered-by-Hexo-and-Javascript/</loc>
+    
+    <lastmod>2021-05-09</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kuhnchris.github.io/tags/index.html</loc>
+    
+    <lastmod>2021-05-09</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kuhnchris.github.io/categories/index.html</loc>
+    
+    <lastmod>2021-05-09</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kuhnchris.github.io/links/index.html</loc>
+    
+    <lastmod>2021-05-09</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kuhnchris.github.io/about/index.html</loc>
+    
+    <lastmod>2021-05-09</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kuhnchris.github.io/github/index.html</loc>
+    
+    <lastmod>2021-05-09</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://kuhnchris.github.io/repository/index.html</loc>
+    
+    <lastmod>2021-05-08</lastmod>
+    
+  </url>
+  
+
+  <url>
+    <loc>https://kuhnchris.github.io/</loc>
+    <lastmod>2021-05-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  
+  <url>
+    <loc>https://kuhnchris.github.io/tags/new/</loc>
+    <lastmod>2021-05-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://kuhnchris.github.io/tags/hexo/</loc>
+    <lastmod>2021-05-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://kuhnchris.github.io/tags/javascript/</loc>
+    <lastmod>2021-05-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://kuhnchris.github.io/tags/personal/</loc>
+    <lastmod>2021-05-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://kuhnchris.github.io/tags/website/</loc>
+    <lastmod>2021-05-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+
+  
+</urlset>

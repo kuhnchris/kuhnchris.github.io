@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#000000" />
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <title>New Blog powered by Hexo and Javascript | KuhnChris.eu</title>
+  <meta name="description" content="New year, new blog! This time I tried to find my way around a new blogging engine, similar to Jekyll, but not written in Ruby. I’m not elitist or anything like that, but I do not particulary like Ruby">
+<meta property="og:type" content="article">
+<meta property="og:title" content="New Blog powered by Hexo and Javascript">
+<meta property="og:url" content="https://kuhnchris.github.io/2021/05/09/New-Blog-powered-by-Hexo-and-Javascript/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="New year, new blog! This time I tried to find my way around a new blogging engine, similar to Jekyll, but not written in Ruby. I’m not elitist or anything like that, but I do not particulary like Ruby">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-05-09T19:12:06.000Z">
+<meta property="article:modified_time" content="2021-05-09T19:46:31.655Z">
+<meta property="article:author" content="Kuhn Chris">
+<meta property="article:tag" content="new">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="javascript">
+<meta property="article:tag" content="personal">
+<meta property="article:tag" content="website">
+<meta name="twitter:card" content="summary">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://kuhnchris.github.io/2021/05/09/New-Blog-powered-by-Hexo-and-Javascript/index.html">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+  
+    <link href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.3.5/dist/jquery.fancybox.min.css" rel="stylesheet">
+  
+  
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.css">
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body class="main-center theme-blue" itemscope itemtype="http://schema.org/WebPage">
+  <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="slimContent">
+    <div class="navbar-header">
+      
+      
+      <div class="profile-block text-center">
+        <a id="avatar" href="https://github.com/kuhnchris" target="_blank">
+          <img class="img-circle img-rotate" src="https://www.gravatar.com/avatar/4957af83d7f09f07f0ef20e7fea1573f?s=128" width="200" height="200">
+        </a>
+        <h2 id="name" class="hidden-xs hidden-sm">Kuhn Chris</h2>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md">Game Dev, FIORI Specialist, Professional Internet Troll</h3>
+        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> Upper Austria, Austria</small>
+      </div>
+      
+      <div class="search" id="search-form-wrap">
+
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <div class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+    <div class="ins-input-wrapper">
+      <input type="text" class="ins-search-input" placeholder="Type something..." x-webkit-speech />
+      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="ins-section-wrapper">
+      <div class="ins-section-container"></div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+      <ul class="nav navbar-nav main-nav menu-highlight">
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/.">
+            
+            <i class="icon icon-home-fill"></i>
+            
+            <span class="menu-title">Home</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-repository">
+          <a href="/repository">
+            
+            <i class="icon icon-project"></i>
+            
+            <span class="menu-title">GitHub</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            
+            <i class="icon icon-archives-fill"></i>
+            
+            <span class="menu-title">Archives</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories">
+            
+            <i class="icon icon-folder"></i>
+            
+            <span class="menu-title">Categories</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-links">
+          <a href="/links">
+            
+            <i class="icon icon-friendship"></i>
+            
+            <span class="menu-title">Links</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/kuhnchris" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="https://twitter.com/kuhnchriseu" target="_blank" title="Twitter" data-toggle=tooltip data-placement=top><i class="icon icon-twitter"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    </nav>
+  </div>
+</header>
+
+  
+    <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">Board</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content">
+                2021 won't be a dumpster fire like 2020, right?
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+      
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget-body">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/" rel="tag">javascript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/new/" rel="tag">new</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/personal/" rel="tag">personal</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/website/" rel="tag">website</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget-body tagcloud">
+      <a href="/tags/hexo/" style="font-size: 13px;">hexo</a> <a href="/tags/javascript/" style="font-size: 13px;">javascript</a> <a href="/tags/new/" style="font-size: 13px;">new</a> <a href="/tags/personal/" style="font-size: 13px;">personal</a> <a href="/tags/website/" style="font-size: 13px;">website</a>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Archive</h3>
+    <div class="widget-body">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">May 2021</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget-body">
+      <ul class="recent-post-list list-unstyled ">
+        
+          <li>
+            
+            <div class="item-thumb">
+              <a href="/2021/05/09/New-Blog-powered-by-Hexo-and-Javascript/" class="thumb">
+    
+    
+        <span class="thumb-image thumb-none"></span>
+    
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2021/05/09/New-Blog-powered-by-Hexo-and-Javascript/" class="title">New Blog powered by Hexo and Javascript</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2021-05-09T19:12:06.000Z" itemprop="datePublished">2021-05-09</time>
+              </p>
+            </div>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+  
+
+    
+  </div>
+</aside>
+
+  
+  
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-New-Blog-powered-by-Hexo-and-Javascript" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+        
+  
+    <h1 class="article-title" itemprop="name">
+      New Blog powered by Hexo and Javascript
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2021/05/09/New-Blog-powered-by-Hexo-and-Javascript/" class="article-date">
+	  <time datetime="2021-05-09T19:12:06.000Z" itemprop="datePublished">2021-05-09</time>
+	</a>
+</span>
+        
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link-link" href="/tags/hexo/" rel="tag">hexo</a>, <a class="article-tag-link-link" href="/tags/javascript/" rel="tag">javascript</a>, <a class="article-tag-link-link" href="/tags/new/" rel="tag">new</a>, <a class="article-tag-link-link" href="/tags/personal/" rel="tag">personal</a>, <a class="article-tag-link-link" href="/tags/website/" rel="tag">website</a>
+  </span>
+
+
+        
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2021/05/09/New-Blog-powered-by-Hexo-and-Javascript/#comments" class="article-comment-link">Comments</a></span>
+        
+	
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 739(words)</span>
+	
+	
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 4(minutes)</span>
+	
+
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <p>New year, new blog! This time I tried to find my way around a new blogging engine, similar to Jekyll, but not written in Ruby. I’m not elitist or anything like that, but I do not particulary like Ruby as a programming language. Don’t get me wrong - it’s fine - it’s just not for me. So - as 2020 went <em>a bit downhill</em> - let’s try to get 2021 in a better direction. </p>
+<p>And yes, I am fully aware it’s already May and this is my first blog post here, so we’re off to a <strong>great</strong> start.</p>
+<h1 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h1><p>What is Hexo? Hexo is basically Jekyll if it were written in Javascript. There may be more to it, but blantly, it boils down to exactly this. You can find <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> here. What I noticed is, that it seems to be fairly popular in the chinese scene - I choose this theme (pure, by cofess, see bottom left in the menu) as is seemed the most appealing to me. Don’t hold me to this tho, I might just change the theme one day for no reason. Honestly, nobody cares.</p>
+<h2 id="Hexo-Themes"><a href="#Hexo-Themes" class="headerlink" title="Hexo Themes"></a>Hexo Themes</h2><p>This puts me onto my first pain point: Getting started with Hexo is weird. I am used to weird javascript library sans any documentation, but this was something else. It may be just this theme in particular, but many factors played into this. Let me give you a couple of examples: </p>
+<ul>
+<li>The “theme”, which is basically a glorified EJS template directory, contained hard-coded chinese strings. I managed to replace them with translation strings, which are luckily supported by the framework, but…</li>
+<li>You need to change the theme (which you actually shouldn’t) to change strings provided in the languages/ folder - no way to overwrite them from outside</li>
+<li>There were multiple default settings in the provided “_config.yml” - which is the core configuration file - those were either not taken into account or ignored by the theme - which turns out to have it’s own _config.yml. You can overwrite values in your own “_config.yml”, but you cannot “remove” those values. Say you want to edit the menu - you can add values, but removing items? Gotta touch the themes/ folder again.</li>
+<li>The theme contained a couple of errors regarding missing _config.yml values - I added checks to the base-theme so they should now be properly checked - I yet have to create an upstream PR tho.</li>
+</ul>
+<p>Thanks to those issues I was actually able to dig right into the center of the framework and dig around the inner workings. It’s actually pretty fun. For someone less experienced probabbly not as fun, but here be dragons. 🐉</p>
+<h1 id="What’s-going-on"><a href="#What’s-going-on" class="headerlink" title="What’s going on?"></a>What’s going on?</h1><p>I am currently migrating stuff over from the old blog, may take a bit tho. Personal projects now include the following ones right now:</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://ccg-landcrisis-blog.github.io/blog/">Land Crisis</a> (Godot) -&gt; We migrated this project to the Godot Engine now, as we are now fully commited to work forward in the new engine with it - as Unity was too hard to handle for us, for some reason. No idea if it is because of the 2D component or something else, but we had to stop and switch or drop the project.</li>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCkUOGZwqwdVDQUfJ5L35EgQ">PixelDiorama</a> -&gt; I’m now part of an upcoming little project called Pixeldiorama, which will contain tutorial videos, pixelart videos, art videos and maybe some projects we are developing.</li>
+<li><a target="_blank" rel="noopener" href="https://godotengine.org/">Godot German Community Server</a> -&gt; Earlier this year I was promoted as a moderator in the official german discord server, so I have a couple of tasks to do over there. Nothing earth-shattering, but it keeps me busy from time to time.</li>
+</ul>
+<p>Those would be the “big hitters” right now.</p>
+<h1 id="What’s-next"><a href="#What’s-next" class="headerlink" title="What’s next?"></a>What’s next?</h1><p>Well, we’ll see how this goes. First thing’s first - it’s “Mission May” which basically means I wrote an spreadsheet where I have to do 1 task per day for at least 1 hour. Right now that didn’t start off terrible well, but let’s see how this continues. After that, migrating the old blog posts (incase anyone ever needs them, but mostly myself), and after that, keeping this blog updated with weekly or monthly posts. Not entirely sure how I will handle this, but I will try to keep it at atleast 1 post month.</p>
+<p>Got questions? Found some bug? Let me know in the comments below - it requires a GitHub account tho.</p>
+
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>Permalink: </strong>
+      <a href="https://kuhnchris.github.io/2021/05/09/New-Blog-powered-by-Hexo-and-Javascript/" title="New Blog powered by Hexo and Javascript" target="_blank" rel="external">https://kuhnchris.github.io/2021/05/09/New-Blog-powered-by-Hexo-and-Javascript/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>Copyright: </strong><a href="http://creativecommons.org/licenses/by/4.0/deed.en" target="_blank" rel="external">This is published under CC BY 4.0 license.</a>
+    </li>
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/kuhnchris" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://www.gravatar.com/avatar/4957af83d7f09f07f0ef20e7fea1573f?s=128" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/kuhnchris" target="_blank"><span class="text-dark">Kuhn Chris</span><small class="ml-1x">Game Dev, FIORI Specialist, Professional Internet Troll</small></a></h3>
+        <div>Site owner</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
+  </article>
+  
+    
+  <section id="comments">
+  	
+           
+    
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  
+  
+  <div class="bar-right">
+    
+    <div class="share-component" data-sites="twitter,google,linkedin" data-mobile-sites="weibo,qq,qzone"></div>
+    
+  </div>
+  </div>
+</nav>
+  
+
+
+</main>
+
+  <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+	
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/kuhnchris" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="https://twitter.com/kuhnchriseu" target="_blank" title="Twitter" data-toggle=tooltip data-placement=top><i class="icon icon-twitter"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    <div class="copyright">
+    	
+        &copy; 2021 Kuhn Chris
+        
+        <div class="publishby">
+        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
+    </div>
+</footer>
+  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+
+<script src="/js/plugin.min.js"></script>
+
+
+<script src="/js/application.js"></script>
+
+
+    <script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+
+
+
+
+   
+
+
+
+
+   
+    
+  <!-- <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"> -->
+  <script src="//cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script>
+  <script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: 'fdd17be097d6045a5f82',
+    clientSecret: 'da7c9855e71832291d3da53cfc7f26c03ad491af',
+    repo: 'kuhnchriseu-gitalk',
+    owner: 'kuhnchris',
+    admin: ['kuhnchris'],
+    id: md5(location.pathname),
+    distractionFreeMode: true
+  })
+  gitalk.render('comments')
+  </script>
+
+      
+
+
+
+  <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.3.5/dist/jquery.fancybox.min.js"></script>
+  <script>
+  //利用 FancyBox 实现点击图片放大
+  $(document).ready(function() {
+    $('article img').not('[hidden]').not('.panel-body img').each(function() {
+      var $image = $(this);
+      var imageCaption = $image.attr('alt');
+      var $imageWrapLink = $image.parent('a');
+      if ($imageWrapLink.length < 1) {
+        var src = this.getAttribute('src');
+        var idx = src.lastIndexOf('?');
+        if (idx != -1) {
+          src = src.substring(0, idx);
+        }
+        $imageWrapLink = $image.wrap('<a href="' + src + '"></a>').parent('a');
+      }
+      $imageWrapLink.attr('data-fancybox', 'images');
+      if (imageCaption) {
+        $imageWrapLink.attr('data-caption', imageCaption);
+      }
+    });
+    $().fancybox({
+      selector: '[data-fancybox="images"]',
+      hash: false,
+      loop: false,
+    });
+  });
+  </script>
+
+
+
+
+
+</body>
+</html>
